@@ -1,0 +1,16 @@
+<h1>Seja Bem-Vindo(a)!</h1>
+
+<%# <%nome = "Thainara"%>
+<%# <p>Meu nome de trás para frente é: <%= nome.reverse.upcase %>
+<%# <>a data de hoje é: <%= Date.today %>
+<ul>
+    <li>
+        <a href="/coins/new"> Add Moedas</a>
+    </li>
+    <li>
+        <%= link_to "Mostra Moedas", "/coins" %>
+    </li>
+    <li>
+        <%= link_to "Moedas", coins_path %>
+    </li>
+</ul>
