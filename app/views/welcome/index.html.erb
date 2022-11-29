@@ -4,14 +4,9 @@
 <%# <%nome = "Thainara"%>
 <%# <p>Meu nome de trás para frente é: <%= nome.reverse.upcase %>
 <%# <>a data de hoje é: <%= Date.today %>
-<ul>
-    <li>
-        <a href="/coins/new"> Add Moedas</a>
-    </li>
-    <li>
-        <%= link_to "Mostra Moedas", "/coins" %>
-    </li>
-    <li>
-        <%= link_to "Moedas", coins_path %>
-    </li>
-</ul>
+
+<%= render "menu" %> <!--Partials, buscando menu no arquivo _menu.html.erb-->
+
+<p> Você está em ambiente de <strong> <%= ambiente_rails %> </strong> </p> <!--Ambiente rails é um helper -->
+<p>Meu nome é: <strong><%= @meu_nome %></strong></p> <!--variável de instância/sessão-->
+<p>Meu curso é: <strong><%= @curso %></strong>

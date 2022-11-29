@@ -8,16 +8,11 @@
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
-
-    <!--Fontes Google-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
   </head>
 
   <body>
-    <h1>Cabeçalho</h1>
+    <%# <h1>Cabeçalho Administrativo</h1> %>
     <%= yield %>
   </body>
-  <h1>Rodapé</h1>
+  <%# <h1>Rodapé Administrativo</h1> %>
 </html>
